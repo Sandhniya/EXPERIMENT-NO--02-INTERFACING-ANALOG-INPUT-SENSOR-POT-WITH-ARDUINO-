@@ -1,8 +1,8 @@
- ###  DATE: 
+ ###  DATE:23.02.24
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME:SANDHIYA SREE B
+###  ROLL NO :212223220093
+###  DEPARTMENT: INFORMATION TECHNOLOGY
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
@@ -42,17 +42,8 @@ General specifications of analog sensor
 **Potentiometer**
 A potentiometer, informally a pot, is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. If only two terminals are used, one end and the wiper, it acts as a variable resistor or rheostat.
 Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment. Potentiometers operated by a mechanism can be used as position transducers, for example, in a joystick. Potentiometers are rarely used to directly control significant power (more than a watt), since the power dissipated in the potentiometer would be comparable to the power in the controlled load
-CIRCUIT DIAGRAM
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
-
-**FIGURE -01
-**
-
+CIRCUIT DIAGRAM:
+[Magnificent Sango.pdf](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/files/14388054/Magnificent.Sango.pdf)
 **PROCEDURE:**
 
 1.	Connect the circuit as per the circuit diagram 
@@ -64,26 +55,39 @@ CIRCUIT DIAGRAM
 7.	Open the file of the program  and verify the error , clear if any errors that are existing 
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
-
-
-
 **PROGRAM** 
- 
+ ```int led=4;
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{ 
+  sensorpot=analogRead(A0);
+  Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+  {
+    digitalWrite(led,HIGH);
+      delay(100);
+    digitalWrite(led,LOW);
+      delay(100);
 
-
-
-
-
-
-
-
+}
+  else
+  {
+    digitalWrite(led,LOW);
+  }}
+    ```
 **
 **Simulation output:** 
-**
 
-
-[My image](username.github.com/repository/img/image.jpg)
+[Magnificent Sango.pdf](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/files/14388073/Magnificent.Sango.pdf)
+![image](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/f9ee4e3f-0e5d-4804-939b-d884bc1ba5e3)
 
 
 
