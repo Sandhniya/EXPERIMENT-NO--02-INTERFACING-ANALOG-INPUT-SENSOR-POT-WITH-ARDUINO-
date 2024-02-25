@@ -1,8 +1,8 @@
- ###  DATE: 
+ ###  DATE: 25.02.24
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: SANDHIYA SREE.B
+###  ROLL NO :212223220093
+###  DEPARTMENT: INFORMATION TECHNOLOGY
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
@@ -43,12 +43,11 @@ General specifications of analog sensor
 A potentiometer, informally a pot, is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. If only two terminals are used, one end and the wiper, it acts as a variable resistor or rheostat.
 Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment. Potentiometers operated by a mechanism can be used as position transducers, for example, in a joystick. Potentiometers are rarely used to directly control significant power (more than a watt), since the power dissipated in the potentiometer would be comparable to the power in the controlled load
 CIRCUIT DIAGRAM
+![Screenshot 2024-02-23 222958](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/3d34e620-093f-43b5-8929-7558581e3b7e)
 
 
 
 
-
-![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
 
 **FIGURE -01
 **
@@ -68,6 +67,34 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
+```
+int led=4;
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{ 
+  sensorpot=analogRead(A0);
+  Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+  {
+    digitalWrite(led,HIGH);
+      delay(100);
+    digitalWrite(led,LOW);
+      delay(100);
+
+}
+  else
+  {
+    digitalWrite(led,LOW);
+  }}
+    ```
  
 
 
@@ -81,11 +108,10 @@ CIRCUIT DIAGRAM
 **
 **Simulation output:** 
 **
+![Screenshot 2024-02-23 222958](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/3d34e620-093f-43b5-8929-7558581e3b7e)
 
 
-[My image](username.github.com/repository/img/image.jpg)
-
-
+[Magnificent Sango (1).pdf](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/files/14395851/Magnificent.Sango.1.pdf)
 
 
 
