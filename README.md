@@ -55,7 +55,11 @@ CIRCUIT DIAGRAM:
 7.	Open the file of the program  and verify the error , clear if any errors that are existing 
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
-**PROGRAM** 
+**PROGRAM**
+![image](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/c7862a3f-c6ab-471d-876a-23404b953a0c)
+![image](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/ef51da1d-0724-4a5f-b79b-cfb59542af0b)
+![Screenshot 2024-03-15 214644](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/78701aa1-7b45-4fd0-ae74-0d7b963a177e)
+
  ```int led=4;
 int sensorpot;
 void setup()
@@ -84,10 +88,11 @@ void loop()
   }}
     ```
 **
-**Simulation output:** 
+Simulation output:
 
-[Magnificent Sango.pdf](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/files/14388073/Magnificent.Sango.pdf)
-![image](https://github.com/Sandhniya/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/151395890/f9ee4e3f-0e5d-4804-939b-d884bc1ba5e3)
+
+
+
 
 
 
